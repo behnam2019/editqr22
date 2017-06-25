@@ -11,7 +11,7 @@ var app = {
         
         // load the AR world
         WikitudePlugin.isDeviceSupported(function() {
-        	WikitudePlugin.loadARchitectWorld("assets/www/theWorld.html");
+        	WikitudePlugin.loadARchitectWorld("www/theWorld.html");
         },
         
         function() {
