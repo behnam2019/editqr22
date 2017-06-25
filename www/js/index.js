@@ -12,7 +12,7 @@ var World = {
 			Important: If you replace the tracker file with your own, make sure to change the target name accordingly.
 			Use a specific target name to respond only to a certain target or use a wildcard to respond to any or a certain group of targets.
 		*/
-        this.targetCollectionResource = new AR.TargetCollectionResource("assets/magazine.wtc", {
+        this.targetCollectionResource = new AR.TargetCollectionResource("img/magazine.wtc", {
         });
 
         this.tracker = new AR.ImageTracker(this.targetCollectionResource, {
@@ -24,7 +24,7 @@ var World = {
 		*/
 
 		/* Create overlay for page one */
-		var imgOne = new AR.ImageResource("assets/imageOne.png");
+		var imgOne = new AR.ImageResource("img/imageOne.png");
 		var overlayOne = new AR.ImageDrawable(imgOne, 1, {
 			translate: {
 				x:-0.15
@@ -48,7 +48,7 @@ var World = {
 		var cssDivRight = " style='display: table-cell;vertical-align: middle; text-align: left;'";
 		document.getElementById('loadingMessage').innerHTML =
 			"<div" + cssDivLeft + ">Scan Target &#35;1 (surfer):</div>" +
-			"<div" + cssDivRight + "><img src='assets/surfer.png'></img></div>";
+			"<div" + cssDivRight + "><img src='img/surfer.png'></img></div>";
 
 		// Remove Scan target message after 10 sec.
 		setTimeout(function() {
